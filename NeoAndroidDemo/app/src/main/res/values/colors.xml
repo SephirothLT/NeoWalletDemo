@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0069d9</color>
+    <color name="colorAccent">#F6A623</color>
+    <color name="colorAccentLight">#FFCC80</color>
+    <color name="colorLoss">#D0011B</color>
+    <color name="colorGain">#7ED321</color>
+    <color name="colorSubtitleGrey">#cecece</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#0F1017</color>
+    <color name="colorSubtleGrey">#FAFAFA</color>
+    <color name="colorDarkGrey">#9B9B9B</color>
+    <color name="colorDisabledButton">#1a4f4f4f</color>
+
+</resources>
+
+

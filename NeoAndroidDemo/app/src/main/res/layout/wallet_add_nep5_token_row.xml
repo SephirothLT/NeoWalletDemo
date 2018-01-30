@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/addNEP5TokenButton"
+        style="@style/BorderLessButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:text="@string/add_nep_5_token"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

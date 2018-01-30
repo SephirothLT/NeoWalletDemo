@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NeoAndroidDemo.iml" filepath="$PROJECT_DIR$/NeoAndroidDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/channel/channel.iml" filepath="$PROJECT_DIR$/channel/channel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/neowallet/neowallet.iml" filepath="$PROJECT_DIR$/neowallet/neowallet.iml" />
+    </modules>
+  </component>
+</project>

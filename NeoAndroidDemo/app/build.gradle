@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "newandroid.zhongtuobang.com.neoandroiddemo"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.2'
+    configurations.all { resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9' }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation project(':neowallet')
+    implementation project(':channel')
+    compile project(':channel')
+    implementation 'com.github.kenglxn.QRGen:android:2.3.0'
+    implementation 'com.github.kittinunf.fuel:fuel:+'
+    implementation 'com.github.salomonbrys.kotson:kotson:2.5.0'
+    implementation 'com.robinhood.spark:spark:1.2.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation "android.arch.lifecycle:extensions:1.0.0"
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    implementation 'com.github.clans:fab:1.6.4'
+    compile 'com.google.guava:guava:23.3-android'
+    annotationProcessor 'com.google.auto.value:auto-value:1.2'
+    compileOnly 'com.google.auto.value:auto-value:1.2'
+    compile 'com.robinhood.ticker:ticker:1.2.2'
+    implementation 'com.github.bumptech.glide:glide:4.3.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.0'
+    compile 'com.github.jkwiecien:EasyImage:1.3.1'
+    compile 'com.afollestad.material-dialogs:core:0.9.0.2'
+    compile "com.google.android:flexbox:0.2.5"
+    compile "com.android.support:cardview-v7:26.0.0-alpha1"
+    compile "com.android.support:design:26.0.0-alpha1"
+    compile "com.github.siyamed:android-shape-imageview:0.9.3"
+    compile "me.relex:circleindicator:1.2.2@aar"
+
+    compile "org.jetbrains.anko:anko:$anko_version"
+    compile "org.jetbrains.anko:anko-sdk15-coroutines:$anko_version"
+    compile "org.jetbrains.anko:anko-appcompat-v7-coroutines:$anko_version"
+    compile "org.jetbrains.anko:anko-design-coroutines:$anko_version"
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+        transitive = true
+    }
+    compile 'com.github.kotlin-graphics:kotlin-unsigned:v2.1'//UnsignedByte
+}

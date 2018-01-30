@@ -1,0 +1,211 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/NoShadowActionBar</item>
+    </style>
+    <style name="NoShadowActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <item name="elevation">0dp</item>
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@font/muli_bold</item>
+    </style>
+
+    <style name="noTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <style name="MySparkViewStyle" parent="@style/spark_SparkView">
+        <item name="spark_lineColor">@color/colorPrimary</item>
+        <item name="spark_lineWidth">@dimen/line_width</item>
+        <item name="spark_cornerRadius">@dimen/corner_radius</item>
+        <item name="spark_fill">false</item>
+
+        <item name="spark_baseLineColor">@color/colorAccent</item>
+        <item name="spark_baseLineWidth">@dimen/base_line_width</item>
+
+        <item name="spark_scrubLineColor">@color/colorPrimary</item>
+        <item name="spark_scrubLineWidth">@dimen/scrub_line_width</item>
+        <item name="spark_scrubEnabled">true</item>
+
+        <item name="spark_animateChanges">true</item>
+    </style>
+    <style name="CardViewStyle" parent="CardView">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+    </style>
+
+    <style name="SubtitleText">
+        <item name="android:textColor">@color/colorSubtitleGrey</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="AccentButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="BorderLessButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+    </style>
+
+    <style name="BorderLessButton.Accent" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+    </style>
+
+
+    <style name="BoldText">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+    </style>
+
+    <style name="TabLayoutAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="RegularText">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="RegularSubtitleText">
+        <item name="android:textColor">@color/colorSubtitleGrey</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="TutorialSubtitle">
+        <item name="android:textColor">@color/colorSubtitleGrey</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="TutorialInfoText">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="TutorialTitle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="RegularSubtitleText.Gain">
+        <item name="android:textColor">@color/colorGain</item>
+    </style>
+
+    <style name="RegularSubtitleText.Loss">
+        <item name="android:textColor">@color/colorLoss</item>
+    </style>
+
+    <style name="IntervalButtonText">
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+    </style>
+
+    <style name="IntervalButtonText.Selected">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="IntervalButtonText.NotSelected">
+        <item name="android:textColor">@color/colorSubtitleGrey</item>
+    </style>
+
+    <style name="PortfolioHeader">
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PortfolioHeader.WalletType">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="PortfolioHeader.PortfolioValue">
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="PrimaryTitle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="PortfolioHeader.PercentChange">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorGain</item>
+    </style>
+
+    <style name="AssetGraphHeaderPercentChange">
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textColor">@color/colorGain</item>
+    </style>
+
+    <style name="AssetGraphPrice">
+        <item name="android:textSize">30dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+
+    <style name="TableRowSubtitleText">
+        <item name="android:textColor">@color/colorSubtitleGrey</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+    <style name="TableRowTitleText">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+    </style>
+
+    <style name="TableRowNumberText">
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/muli</item>
+    </style>
+
+</resources>

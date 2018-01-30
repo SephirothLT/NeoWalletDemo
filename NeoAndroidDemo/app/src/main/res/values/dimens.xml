@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="line_width">1dp</dimen>
+    <dimen name="corner_radius">25dp</dimen>
+    <dimen name="base_line_width">1dp</dimen>
+    <dimen name="scrub_line_width">1dp</dimen>
+</resources>

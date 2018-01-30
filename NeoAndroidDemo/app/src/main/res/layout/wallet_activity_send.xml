@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.send.SendActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:id="@+id/sendToLabel"
+                    style="@style/BoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/scanAddressButton"
+                    style="@style/BorderLessButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_send"
+                    app:layout_constraintEnd_toEndOf="parent"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                <Button
+                    android:id="@+id/pasteAddressButton"
+                    style="@style/BorderLessButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paste_send"
+                    app:layout_constraintEnd_toStartOf="@+id/scanAddressButton"
+                    tools:layout_editor_absoluteY="0dp" />
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/addressTextView"
+                style="@style/RegularText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/neo_address_placeholder"
+                android:inputType="textPersonName" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/BoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asset"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/selectedAssetTextView"
+                    style="@style/BoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEO"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/BoldText"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/amount" />
+
+                <EditText
+                    android:id="@+id/amountTextView"
+                    style="@style/BoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sendButton"
+                style="@style/AccentButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/accent_button_background"
+                 android:text="@string/send"  />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clipToPadding="false">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/BoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/noteTextView"
+                style="@style/RegularText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Note"
+                android:ems="10"
+                android:hint="Note to receiver"
+
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="homeFragment">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/portfolioHeaderFragment"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toTopOf="@+id/graphLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/graphLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toTopOf="@+id/intervalButtonLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/portfolioHeaderFragment"
+                tools:background="@android:color/white">
+
+                <com.robinhood.spark.SparkView
+                    android:id="@+id/sparkview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/intervalButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/graphLayout">
+
+                <Button
+                    android:id="@+id/sixHourInterval"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="5"
+                    android:text="@string/six_hours"
+                    android:textAppearance="@style/IntervalButtonText.NotSelected" />
+
+                <Button
+                    android:id="@+id/oneDayInterval"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="20"
+                    android:text="@string/one_day"
+                    android:textAppearance="@style/IntervalButtonText.Selected" />
+
+                <Button
+                    android:id="@+id/oneWeekInterval"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="140"
+                    android:text="@string/one_week"
+                    android:textAppearance="@style/IntervalButtonText.NotSelected" />
+
+                <Button
+                    android:id="@+id/oneMonthInterval"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="560"
+                    android:text="@string/one_month"
+                    android:textAppearance="@style/IntervalButtonText.NotSelected" />
+
+                <Button
+                    android:id="@+id/threeMonthInterval"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="1680"
+                    android:text="@string/three_month"
+                    android:textAppearance="@style/IntervalButtonText.NotSelected" />
+
+                <Button
+                    android:id="@+id/allInterval"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="2000"
+                    android:text="ALL"
+                    android:textAppearance="@style/IntervalButtonText.NotSelected" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/assetListView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intervalButtonLayout" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>

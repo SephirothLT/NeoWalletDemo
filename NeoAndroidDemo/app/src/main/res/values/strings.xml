@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">NeoDemo</string>
+
+    <!-- Landing Page -->
+    <string-array name="onboarding_image_titles">
+        <item>Add Watch Only Address</item>
+        <item>Send, Claim, and Recieve</item>
+        <item>Add Watch Only Address</item>
+    </string-array>
+    <string name="login_landing">LOGIN</string>
+    <string name="new_wallet_question">New to O3?</string>
+    <string name="create_new_wallet">CREATE A NEW WALLET</string>
+    <string name="existing_key_detected">We\'ve detected that there is already a private key on
+        this device, are you sure you want to replace the current private key with a new one?</string>
+
+    <!-- Create Wallet Page -->
+    <string name="create_welcome">Welcome NeoAndroid!</string>
+    <string name="your_public_address">Your Public Address</string>
+    <string name="your_private_key_create">Your Private Key (WIF)</string>
+    <string name="private_key_warning">Never lose or share your private key with anyone, doing so will comprimise
+        the security of your funds.</string>
+    <string name="start">START</string>
+    <string name="alert_warning">Your private key is the most important piece of information in the NEO Economy.\n\n
+    We will save an encrypted version on your device, but please make sure to write down the private key in another secure
+        location so that you may retrieve your funds in case something happens to your device.</string>
+    <string name="warning_confirmation">I confirm that I have backed up my private key in another secure location</string>
+
+    <!-- Login Page -->
+    <string name="your_private_key_login">Your Private Key (WIF)</string>
+    <string name="scan">SCAN</string>
+    <string name="footnote_login">This private key will be stored on your device after logging in.</string>
+    <string name="login_login">LOGIN</string>
+    <string name="scan_prompt_login">Scan the QR code of your private key</string>>
+
+    <!-- Settings: Menu -->
+    <string name="settings">Settings</string>
+    <string-array name="settings_menu_titles">
+        <item>My Private Key</item>
+        <item>Address Book</item>
+        <item>Watch Only Address</item>
+        <item>Network</item>
+        <item>Contact</item>
+        <item>Logout</item>
+        <item>Version</item>
+    </string-array>
+    <!-- This string exists in order to allow for proper formatting-->
+    <string name="version">Version: %1$s</string>
+
+
+    <!-- Settings: Private Key -->
+    <string name="private_key">Private Key</string>
+
+    <!-- Settings: Address Book -->
+    <string name="address_book">Address Book</string>
+    <string name="add_address_address_book">+ ADD ADDRESS</string>
+    <string name="contact">Contact</string>
+    <string name="address_address_book">Address</string>
+    <string name="paste_address_book">PASTE</string>
+    <string name="scan_address_book">SCAN</string>
+    <string name="name_address_book">Name</string>
+    <string name="add_contact">ADD CONTACT</string>
+    <string name="scan_prompt_address_book">Scan the QR code of the address you want to save</string>
+    <string name="copied_address">Copied Address</string>
+    <string name="remove_contact">Remove Contact</string>
+    <string name="remove_contact_warning">Are you sure you want to remove this contact?</string>
+
+    <!-- Settings: Watch Addresses -->
+    <string name="watch_addresses">Watch Addresses</string>
+    <string name="add_address_watch_addresses">+ ADD ADDRESS</string>
+    <string name="watch_address_explanation">Watch only addresses let you monitor your portfolio in an
+    isolated environment. Although you won\'t be able to send funds frm these addresses, you will be able to check
+    the balance</string>
+    <string name="watch_address">Watch Address</string>
+    <string name="address_watch_addresses">Address</string>
+    <string name="paste_watch_addresses">PASTE</string>
+    <string name="scan_watch_addresses">SCAN</string>
+    <string name="name_watch_addresses">Name</string>
+    <string name="add_watch_address">ADD WATCH ADDRESS</string>
+    <string name="scan_prompt_watch_address">Scan the QR code of the address you want to save</string>
+    <string name="remove_watch_address">Remove Watch Address</string>
+    <string name="remove_watch_address_warning">Are you sure you want to remove this watch address?</string>
+
+    <!-- Settings: Network -->
+    <string name="available_nodes">Available Nodes</string>
+    <string name="peer_count">Peer Count: %1$d</string>
+    <string name="block_count">Block Count: %1$d</string>
+
+    <!-- Settings: Logout -->
+    <string name="logout_warning">Are you sure you want to remove your private key from this device?</string>
+
+
+    <!-- Wallet -->
+    <string name="my_o3_wallet">My O3 Wallet</string>
+    <string name="assets">ASSETS</string>
+    <string name="transactions">TRANSACTIONS</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="unclaimed_gas">UNCLAIMED GAS</string>
+    <string name="add_nep_5_token">+ ADD NEP5 TOKEN</string>
+    <string name="claim">CLAIM</string>
+    <string name="nep_5_tokens">NEP5 Tokens</string>
+    <string name="my_address">My Address</string>
+    <string name="copy_address_my_address">COPY ADDRESS</string>
+    <string name="no_transactions">No Transactions</string>
+    <string name="claiming_gas">Claiming Gas</string>
+    <string name="claimed_gas_successfully">Claimed Gas Successfully, Please Wait several minutes before claiming again</string>
+    <string name="please_wait_for_claim">Claim Pending...Please Wait</string>
+
+    <string name="my_address_action_label">My NEO address</string>
+    <string name="topup_cold_storage_action_label">Cold Storage</string>
+    <string name="send_action_label">Send</string>
+
+    <!-- Wallet Send -->
+    <string name="send">Send</string>
+    <string name="to">To</string>
+    <string name="paste_send">PASTE</string>
+    <string name="scan_send">SCAN</string>
+    <string name="neo_address_placeholder">NEO Address</string>
+    <string name="asset">Asset</string>
+    <string name="amount">Amount</string>
+    <string name="amount_must_be_nonzero">Amount must not be zero</string>
+    <string name="sending_in_progress">Sending...</string>
+    <string name="sent_successfully">Sent Succesfully</string>
+    <string name="send_error">Error while sending, please check your network</string>
+    <string name="send_confirmation">"Are you sure you want to send %1$s %2$s to %3$s?</string>
+    <string name="scan_prompt_qr_send">Scan the qr code of the recipient address</string>
+
+    <string name="native_assets_header">Native Assets</string>
+    <string name="token_assets_header">Tokens</string>
+
+    <!-- Wallet Topup -->
+    <string name="from_cold_storage">From: Cold Storage Address</string>
+    <string name="asset_topup">Asset</string>
+    <string name="amount_topup">Amount</string>
+    <string name="scan_qr_code">SCAN QR CODE</string>
+    <string name="topup_footnote">Please have your QR code ready to scan</string>
+    <string name="confirm">CONFIRM</string>
+
+    <string name="get_started">GET STARTED</string>
+
+    <string name="cold_storage_private_key">Your Cold Storage Private Key (WIF)</string>
+    <string name="cold_storage_private_key_explanation">Your cold storage private key will never be stored on this device.
+    Instead it will be encrypted into two seperate fragments. You will need both pieces in order to withdraw from cold storage. This
+    is made possible from some math magic called "Shamir's Secret Sharing Algorithm."</string>
+    <string name="cold_storage_scan">Scan</string>
+    <string name="cold_storage_read_more">Read More</string>
+    <string name="generate_encrypted_key_fragments">Encrypt Into Key Fragments</string>
+    <string name="scan_prompt_cold_storage">Scan the private key of cold storage</string>
+    <string name="encryption_in_progress">Encryption in Progress...</string>
+    <string name="first_fragment_secure">Two pieces of encrypted data is generated.
+        One is securely stored on your device and You will be given another one in the next screen.</string>
+    <string name="continue_button">Continue</string>
+    <string name="encryption_done">First Fragment Stored on Device</string>
+
+    <string name="second_key_fragment">Second Key Fragment</string>
+    <string name="save">Save</string>
+    <string name="second_key_fragment_explanation">You can choose to print this or email it to yourself.
+        You will scan this QR code with your O3 wallet inorder to topup from your cold storage account.
+        Anyone who gets a hold of this data alone is not able to do anything with your NEO.</string>
+    <string name="done">Done</string>
+    <string name="save_fragment_confirm">I have saved this QR Code</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="cold_storage_vault">Cold Storage Vault</string>
+    <string name="remove_cold_storage">Remove Cold Storage</string>
+
+
+    <string-array name="topup_tutorial_titles">
+        <item>O3 Simple Transfer</item>
+        <item>Security</item>
+        <item>Convenience</item>
+    </string-array>
+
+    <string-array name="topup_tutorial_subtitles">
+        <item>Introducing</item>
+        <item>O3 Simple Transfer</item>
+        <item>O3 Simple Transfer</item>
+    </string-array>
+
+    <string-array name="topup_tutorial_explanations">
+        <item>Secure and Convenient way to transfer
+            NEO or GAS from any one of your NEO addresses to O3 Mobile Wallet.</item>
+        <item>Two pieces of information will be genereated from your private key. One part is securely stored on this device.
+            Another part you can choose to store it anywhere. </item>
+        <item>Simply scan the given QR code and enter NEO or GAS amount you would like to transfer to your O3 Wallet.
+            You’re all set!</item>
+    </string-array>
+
+    <!-- Portfolio -->
+    <string name="price_history">%1$s Price History</string>
+
+    <string-array name="portfolio_headers">
+        <item>OZONE WALLET</item>
+        <item>COMBINED</item>
+        <item>COLD STORAGE</item>
+    </string-array>
+
+    <string name="six_hours">6H</string>
+    <string name="one_day">24H</string>
+    <string name="one_week">1W</string>
+    <string name="one_month">1M</string>
+    <string name="three_month">3M</string>
+    <string name="all">ALL</string>
+
+    <!-- Tab Titles -->
+    <string name="portfolio">portfolio</string>
+    <string name="account">Account</string>
+    <string name="news_feed">News Feed</string>
+
+    <!-- Contact Menu -->
+    <string name="send_contact_menu">Send</string>
+    <string name="copy_contact_menu">Copy</string>
+    <string name="remove_contact_menu">Remove</string>
+
+    <!-- Common Alerts -->
+    <string name="no_passcode_setup">Secure lock screen hasn\'t set up.\n Go to \'Settings -> Security ->
+        Screenlock\' to set up a lock screen</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="cancel">Cancel</string>
+    <string name="invalid_neo_address">Your provided an invalid NEO address, please check it again.</string>
+    <string name="error">Error</string>
+    <string name="invalid_wif">Invalid WIF</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="neo_asset_id">0xc56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b</string>
+    <string name="gas_asset_id">0x602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7"</string>
+
+    <string name="add_address_watch_address_description">Watch only let you monitor your portfolio in
+        an isolated environment. Although you won\'t be able to send funds from these addresses you will be able
+        to check the balance</string>
+    <string name="add_address_contact_description">Your address book will let you send funds
+        all over the world without needing to remember your address</string>
+
+    <string name="channel_message_notification_title_template">Channel message: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="channel_message_notification_placeholder_text_template">You said %1$s and lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit
+        vel semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+</resources>
